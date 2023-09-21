@@ -1,0 +1,132 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+}
+
+.container .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .img img {
+    width: 550px;
+    transform: rotate(90deg);
+    margin-top: -170px;
+    border-radius: 10px;
+}
+.container .img .centar1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6b6b6ba6;
+    position: absolute;
+    top: 300px;
+    right: 400px;
+    z-index: 1000;
+}
+.container .img .center2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dfdfdf;
+    margin: 5px 5px;
+    z-index: 200000;
+}
+.container .img p{
+    position: absolute;
+    top: 280px;
+    right: 310px;
+    color: #b6b3b3;
+    background-color: #6b6b6b;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.container .img p::before{
+    content: '';
+    border-style: solid;
+    border-color: transparent #6b6b6b transparent transparent;
+    border-width: 9px;
+    position: absolute;
+    top: 5px;
+    right: 75px;
+}
+
+
+.container .form {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3e3f41;
+    padding: 50px 60px;
+    border-radius: 20px;
+}
+
+.container .form .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .form h2 {
+    font-size: 23px;
+    margin-bottom: -2px;
+    color: #ddd9d9;
+}
+
+.container .form p {
+    margin-bottom: 40px;
+    color: #ddd9d9;
+}
+
+.container .form input,
+.container .form textarea {
+    background-color: #3e3f41;
+    border: none;
+    border-bottom: 1px solid #4c4c4d;
+    padding-bottom: 7px;
+    margin-bottom: 30px;
+    color: #ddd9d9;
+    caret-color: #6b6b6b;
+}
+
+.container .form textarea {
+    font-size: 100%;
+    margin: 0;
+    resize: none;
+    height: 120px;
+    margin-bottom: 50px;
+}
+.container .form input:focus,
+.container .form textarea:focus{
+    outline: none;
+}
+.container .icons{
+    position: absolute;
+    top: 69px;
+    left: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3e3f41;
+    padding: 75px 15px;
+    border-radius: 10px;
+}
+.container .icons i{
+    color: #ddd9d9;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.container .icons i.ff{
+    margin-bottom: 0;
+}
